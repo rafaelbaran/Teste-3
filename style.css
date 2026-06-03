@@ -1,243 +1,350 @@
+/* RESET DE ESTILOS UNIVERSAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-*{
-  margin:0;
-    padding:0;
-      box-sizing:border-box;
-      }
+html {
+    scroll-behavior: smooth;
+}
 
-      body{
-        font-family:'Poppins', sans-serif;
-          background:#f4f4f5;
-            color:#27272a;
-            }
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    color: #2c3e50;
+    line-height: 1.6;
+}
 
-            /* HEADER */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-            header{
-              width:100%;
-                padding:20px 8%;
-                  display:flex;
-                    align-items:center;
-                      justify-content:space-between;
-                        background:linear-gradient(90deg,#0284c7,#06b6d4);
-                          color:white;
-                            box-shadow:0 5px 15px rgba(0,0,0,0.1);
-                            }
+/* SISTEMA DE ABAS (PÁGINAS) */
+.tab-content {
+    display: none;
+}
+.tab-content.active-tab {
+    display: block;
+}
 
-                            .logo h1{
-                              font-size:32px;
-                                font-weight:700;
-                                }
+/* NAVBAR PROFISSIONAL */
+.navbar {
+    background: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-                                .logo p{
-                                  font-size:14px;
-                                    opacity:0.9;
-                                    }
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-                                    .btn-topo{
-                                      text-decoration:none;
-                                        background:white;
-                                          color:#0284c7;
-                                            padding:12px 24px;
-                                              border-radius:50px;
-                                                font-weight:600;
-                                                  transition:0.3s;
-                                                  }
+.logo h1 {
+    font-size: 24px;
+    color: #0099ff;
+    font-weight: 700;
+}
 
-                                                  .btn-topo:hover{
-                                                    transform:scale(1.05);
-                                                    }
+.logo p {
+    font-size: 11px;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
-                                                    /* HERO */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
 
-                                                    .hero{
-                                                      background:linear-gradient(90deg,#0284c7,#06b6d4);
-                                                        min-height:80vh;
-                                                          display:flex;
-                                                            align-items:center;
-                                                              justify-content:center;
-                                                                text-align:center;
-                                                                  padding:50px 8%;
-                                                                    color:white;
-                                                                    }
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
 
-                                                                    .hero-content{
-                                                                      max-width:900px;
-                                                                      }
+.nav-links a:hover, .nav-links a.active {
+    color: #0099ff;
+}
 
-                                                                      .hero h2{
-                                                                        font-size:65px;
-                                                                          margin-bottom:25px;
-                                                                            font-weight:700;
-                                                                            }
+/* HERO SECTION PREMUM */
+.hero {
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
 
-                                                                            .hero h2 span{
-                                                                              display:block;
-                                                                              }
+.hero-content h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
-                                                                              .hero p{
-                                                                                font-size:24px;
-                                                                                  line-height:1.8;
-                                                                                    opacity:0.95;
-                                                                                    }
+.hero-content p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    opacity: 0.95;
+    font-weight: 300;
+}
 
-                                                                                    .hero-buttons{
-                                                                                      margin-top:40px;
-                                                                                        display:flex;
-                                                                                          justify-content:center;
-                                                                                          }
+.btn-hero {
+    display: inline-block;
+    background: white;
+    color: #0083b0;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-                                                                                          .btn-primary{
-                                                                                            text-decoration:none;
-                                                                                              padding:18px 35px;
-                                                                                                border-radius:50px;
-                                                                                                  font-weight:600;
-                                                                                                    transition:0.3s;
-                                                                                                      background:white;
-                                                                                                        color:#0284c7;
-                                                                                                        }
+.btn-hero:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
 
-                                                                                                        .btn-primary:hover{
-                                                                                                          transform:translateY(-4px);
-                                                                                                          }
+/* SEÇÃO DE DIFERENCIAIS */
+.diferenciaiscontainer {
+    margin-top: -40px;
+    padding-bottom: 60px;
+}
 
-                                                                                                          /* PROFISSIONAIS */
+.grid-diferenciais {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
 
-                                                                                                          .profissionais{
-                                                                                                            padding:100px 8%;
-                                                                                                            }
+.diferencial-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s;
+}
 
-                                                                                                            .titulo{
-                                                                                                              text-align:center;
-                                                                                                                margin-bottom:60px;
-                                                                                                                }
+.diferencial-card:hover {
+    transform: translateY(-5px);
+}
 
-                                                                                                                .titulo h3{
-                                                                                                                  font-size:42px;
-                                                                                                                    margin-bottom:10px;
-                                                                                                                    }
+.diferencial-card h3 {
+    color: #0083b0;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
 
-                                                                                                                    .titulo p{
-                                                                                                                      color:#71717a;
-                                                                                                                      }
+.diferencial-card p {
+    color: #7f8c8d;
+    font-size: 14px;
+}
 
-                                                                                                                      .cards{
-                                                                                                                        display:grid;
-                                                                                                                          grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-                                                                                                                            gap:35px;
-                                                                                                                            }
+/* SEÇÃO PROFISSIONAIS */
+.profissionais-section {
+    padding: 80px 0;
+}
 
-                                                                                                                            .card{
-                                                                                                                              background:white;
-                                                                                                                                border-radius:30px;
-                                                                                                                                  padding:45px 30px;
-                                                                                                                                    text-align:center;
-                                                                                                                                      box-shadow:0 10px 30px rgba(0,0,0,0.08);
-                                                                                                                                        transition:0.3s;
-                                                                                                                                        }
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
 
-                                                                                                                                        .card:hover{
-                                                                                                                                          transform:translateY(-10px);
-                                                                                                                                          }
+.section-title h2 {
+    font-size: 32px;
+    color: #2c3e50;
+    font-weight: 600;
+}
 
-                                                                                                                                          .icone{
-                                                                                                                                            font-size:65px;
-                                                                                                                                              margin-bottom:20px;
-                                                                                                                                              }
+.section-title p {
+    color: #7f8c8d;
+}
 
-                                                                                                                                              .card h4{
-                                                                                                                                                font-size:34px;
-                                                                                                                                                  color:#0284c7;
-                                                                                                                                                    margin-bottom:15px;
-                                                                                                                                                    }
+.grid-profissionais {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+}
 
-                                                                                                                                                    .info{
-                                                                                                                                                      margin-bottom:20px;
-                                                                                                                                                        color:#52525b;
-                                                                                                                                                        }
+/* CARDS DE PROFISSÃO ATUALIZADOS */
+.card-profissional {
+    background: white;
+    border-radius: 30px;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
 
-                                                                                                                                                        .info p{
-                                                                                                                                                          margin:5px 0;
-                                                                                                                                                          }
+.card-profissional:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
 
-                                                                                                                                                          .card span{
-                                                                                                                                                            display:block;
-                                                                                                                                                              font-size:22px;
-                                                                                                                                                                margin-bottom:30px;
-                                                                                                                                                                }
+/* TAG DISPONÍVEL SOLICITADA */
+.badge-disponivel {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #2ecc71;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);
+}
 
-                                                                                                                                                                .btn-card{
-                                                                                                                                                                  display:inline-block;
-                                                                                                                                                                    text-decoration:none;
-                                                                                                                                                                      background:linear-gradient(90deg,#0ea5e9,#0284c7);
-                                                                                                                                                                        color:white;
-                                                                                                                                                                          padding:16px 35px;
-                                                                                                                                                                            border-radius:50px;
-                                                                                                                                                                              font-weight:600;
-                                                                                                                                                                                transition:0.3s;
-                                                                                                                                                                                }
+.avatar-emoji {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
 
-                                                                                                                                                                                .btn-card:hover{
-                                                                                                                                                                                  transform:scale(1.05);
-                                                                                                                                                                                  }
+.card-profissional h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
 
-                                                                                                                                                                                  /* BENEFÍCIOS */
+.rating {
+    color: #f1c40f;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
 
-                                                                                                                                                                                  .beneficios{
-                                                                                                                                                                                    padding:40px 8% 100px;
-                                                                                                                                                                                      display:grid;
-                                                                                                                                                                                        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-                                                                                                                                                                                          gap:25px;
-                                                                                                                                                                                          }
+.experiencia {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
 
-                                                                                                                                                                                          .beneficio{
-                                                                                                                                                                                            background:white;
-                                                                                                                                                                                              padding:35px;
-                                                                                                                                                                                                border-radius:25px;
-                                                                                                                                                                                                  text-align:center;
-                                                                                                                                                                                                    box-shadow:0 10px 25px rgba(0,0,0,0.05);
-                                                                                                                                                                                                    }
+.preco-diaria {
+    font-size: 16px;
+    color: #34495e;
+    background: #f8faf9;
+    padding: 12px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
 
-                                                                                                                                                                                                    .beneficio h5{
-                                                                                                                                                                                                      font-size:24px;
-                                                                                                                                                                                                        margin-bottom:10px;
-                                                                                                                                                                                                          color:#0284c7;
-                                                                                                                                                                                                          }
+.preco-diaria strong {
+    color: #0099ff;
+    font-size: 20px;
+}
 
-                                                                                                                                                                                                          /* FOOTER */
+.btn-vermais {
+    display: block;
+    background: #0099ff;
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
 
-                                                                                                                                                                                                          footer{
-                                                                                                                                                                                                            background:#18181b;
-                                                                                                                                                                                                              color:white;
-                                                                                                                                                                                                                text-align:center;
-                                                                                                                                                                                                                  padding:45px 20px;
-                                                                                                                                                                                                                  }
+.btn-vermais:hover {
+    background: #007acc;
+}
 
-                                                                                                                                                                                                                  footer h4{
-                                                                                                                                                                                                                    font-size:28px;
-                                                                                                                                                                                                                      margin-bottom:15px;
-                                                                                                                                                                                                                      }
+/* PÁGINA SOBRE NÓS */
+.sobre-section {
+    padding: 100px 0;
+    min-height: 70px;
+}
 
-                                                                                                                                                                                                                      footer p{
-                                                                                                                                                                                                                        opacity:0.8;
-                                                                                                                                                                                                                        }
+.content-sobre {
+    max-width: 800px;
+    background: white;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.03);
+}
 
-                                                                                                                                                                                                                        /* RESPONSIVO */
+.content-sobre h2 {
+    font-size: 36px;
+    color: #2c3e50;
+}
 
-                                                                                                                                                                                                                        @media(max-width:768px){
+.content-sobre .subtitle {
+    color: #0099ff;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
 
-                                                                                                                                                                                                                          .hero h2{
-                                                                                                                                                                                                                              font-size:42px;
-                                                                                                                                                                                                                                }
+.sobre-text-block p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 16px;
+}
 
-                                                                                                                                                                                                                                  .hero p{
-                                                                                                                                                                                                                                      font-size:20px;
-                                                                                                                                                                                                                                        }
+.sobre-text-block h3 {
+    margin: 30px 0 15px 0;
+    color: #2c3e50;
+}
 
-                                                                                                                                                                                                                                          header{
-                                                                                                                                                                                                                                              flex-direction:column;
-                                                                                                                                                                                                                                                  gap:20px;
-                                                                                                                                                                                                                                                      text-align:center;
-                                                                                                                                                                                                                                                        }
+.sobre-text-block ul {
+    padding-left: 20px;
+}
 
-                                                                                                                                                                                                                                                        }
+.sobre-text-block li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* FOOTER PADRÃO */
+.footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #0099ff;
+}
+
+.footer p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero-content h2 {
+        font-size: 30px;
+    }
+    .hero-content p {
+        font-size: 15px;
+    }
+    .content-sobre {
+        padding: 25px;
+    }
+}
