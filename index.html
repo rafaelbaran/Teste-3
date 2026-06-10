@@ -3,135 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConectaProf Premium - Especialistas em Construção e Reforma</title>
+    <title>Sustentabilidade Ambiental</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="container nav-container">
-            <div class="logo">
-                <span class="logo-icon">⚡</span>
-                <div class="logo-text">
-                    <h1>ConectaProf</h1>
-                    <p>Plataforma de Serviços Elite</p>
-                </div>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home" class="nav-item active" onclick="navigate('home')">Início</a></li>
-                    <li><a href="#portfolio" class="nav-item" onclick="navigate('portfolio')">Nossas Obras</a></li>
-                    <li><a href="#sobre" class="nav-item" onclick="navigate('sobre')">Sobre a Plataforma</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <h1>🌱 Sustentabilidade Ambiental</h1>
+        <p>
+            Preservar a natureza é garantir um futuro melhor para todos.
+            Pequenas atitudes geram grandes mudanças.
+        </p>
     </header>
 
-    <main id="view-home" class="view-content active-view">
-        <section class="hero">
-            <div class="container hero-grid">
-                <div class="hero-text">
-                    <span class="pill-info">✨ Conexão Direta & Sem Intermediários</span>
-                    <h2>A mão de obra perfeita para a sua reforma ou construção.</h2>
-                    <p>Olá, eu sou o Rafael Baran. Desenvolvi o ConectaProf para ser o atalho mais seguro entre a sua necessidade e os profissionais mais bem avaliados do mercado. Praticidade, diárias transparentes e fechamento direto por e-mail.</p>
-                    <div class="hero-actions">
-                        <a href="#profissionais-ancora" class="btn-primary" onclick="scrollToProfissionais(event)">Encontrar Profissional</a>
-                        <a href="#portfolio" class="btn-secondary" onclick="navigate('portfolio')">Ver Portfólio de Obras</a>
-                    </div>
-                </div>
-                <div class="hero-badge-card">
-                    <div class="stat-box">
-                        <h3>+150</h3>
-                        <p>Projetos Entregues</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3>4.9</h3>
-                        <p>Avaliação Média</p>
-                    </div>
-                </div>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#acoes">Ações</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="sobre">
+        <h2 class="titulo">O que é Sustentabilidade?</h2>
+        <p class="texto">
+            Sustentabilidade é o uso consciente dos recursos naturais para atender às
+            necessidades atuais sem comprometer as futuras gerações. Ela promove o
+            equilíbrio entre desenvolvimento econômico, preservação ambiental e bem-estar social.
+        </p>
+    </section>
+
+    <section id="acoes">
+        <h2 class="titulo">Ações Sustentáveis</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>♻️ Reciclagem</h3>
+                <p>Transformar resíduos em novos produtos reduz a poluição e economiza recursos.</p>
             </div>
-        </section>
 
-        <section id="profissionais-ancora" class="section-padding">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Nossos Especialistas Disponíveis</h2>
-                    <p>Selecione o profissional ideal e inicie a contratação formal via e-mail corporativo.</p>
-                </div>
-
-                <div class="grid-profissionais">
-                    <div class="card-premium">
-                        <span class="tag-status">Disponível</span>
-                        <div class="card-header-main">
-                            <div class="emoji-wrapper">👷‍♂️</div>
-                            <div>
-                                <h3>Pedreiro Especialista</h3>
-                                <div class="card-stars">⭐⭐⭐⭐⭐ <span>4.9</span></div>
-                            </div>
-                        </div>
-                        <p class="card-desc">Especialista em fundações, alvenaria estrutural, reboco técnico e leitura de plantas arquitetônicas.</p>
-                        <div class="card-meta">
-                            <span>🕒 8 anos de experiência</span>
-                        </div>
-                        <div class="card-price">
-                            <p>Valor da Diária</p>
-                            <h3>R$ 180,00</h3>
-                        </div>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=seu-email@gmail.com&su=Contratação%20de%20Pedreiro%20-%20ConectaProf&body=Olá,%20Rafael.%20Gostaria%20de%20agendar%20um%20atendimento%20com%20o%20Pedreiro%20Especialista%20visto%20na%20plataforma." target="_blank" class="btn-card">Solicitar via Gmail</a>
-                    </div>
-
-                    <div class="card-premium">
-                        <span class="tag-status">Disponível</span>
-                        <div class="card-header-main">
-                            <div class="emoji-wrapper">⚡</div>
-                            <div>
-                                <h3>Eletricista Residencial</h3>
-                                <div class="card-stars">⭐⭐⭐⭐⭐ <span>5.0</span></div>
-                            </div>
-                        </div>
-                        <p class="card-desc">Instalações elétricas padrão, quadros de distribuição, manutenção preventiva e projetos de iluminação LED.</p>
-                        <div class="card-meta">
-                            <span>🕒 10 anos de experiência</span>
-                        </div>
-                        <div class="card-price">
-                            <p>Valor da Diária</p>
-                            <h3>R$ 200,00</h3>
-                        </div>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=seu-email@gmail.com&su=Contratação%20de%20Eletricista%20-%20ConectaProf&body=Olá,%20Rafael.%20Gostaria%20de%20agendar%20um%20atendimento%20com%20o%20Eletricista%20visto%20na%20plataforma." target="_blank" class="btn-card">Solicitar via Gmail</a>
-                    </div>
-
-                    <div class="card-premium">
-                        <span class="tag-status">Disponível</span>
-                        <div class="card-header-main">
-                            <div class="emoji-wrapper">🎨</div>
-                            <div>
-                                <h3>Pintor & Acabamentos</h3>
-                                <div class="card-stars">⭐⭐⭐⭐⭐ <span>4.8</span></div>
-                            </div>
-                        </div>
-                        <p class="card-desc">Pinturas internas e externas, aplicação profissional de massa corrida, texturas, grafiato e efeitos modernos.</p>
-                        <div class="card-meta">
-                            <span>🕒 6 anos de experiência</span>
-                        </div>
-                        <div class="card-price">
-                            <p>Valor da Diária</p>
-                            <h3>R$ 160,00</h3>
-                        </div>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=seu-email@gmail.com&su=Contratação%20de%20Pintor%20-%20ConectaProf&body=Olá,%20Rafael.%20Gostaria%20de%20agendar%20um%20atendimento%20com%20o%20Pintor%20visto%20na%20plataforma." target="_blank" class="btn-card">Solicitar via Gmail</a>
-                    </div>
-                </div>
+            <div class="card">
+                <h3>💧 Economia de Água</h3>
+                <p>Evitar desperdícios ajuda a preservar esse recurso essencial para a vida.</p>
             </div>
-        </section>
-    </main>
 
-    <main id="view-portfolio" class="view-content">
-        <section class="section-padding">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Galeria de Projetos Realizados</h2>
-                    <p>Acompanhe o padrão técnico e visual das reformas e manutenções executadas por nosso time.</p>
-                </div>
+            <div class="card">
+                <h3>⚡ Energia Renovável</h3>
+                <p>Energia solar e eólica diminuem os impactos ambientais.</p>
+            </div>
 
-                <div class="gallery-grid">
-                    <div class="gallery-
+            <div class="card">
+                <h3>🌳 Reflorestamento</h3>
+                <p>O plantio de árvores melhora a qualidade do ar e protege a biodiversidade.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2 class="titulo">Natureza</h2>
+
+        <div class="galeria">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" alt="Floresta">
+            <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e" alt="Montanhas">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Natureza">
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="caixa-contato">
+            <h2>Faça sua Parte</h2>
+            <p>Ajude a proteger o planeta adotando hábitos sustentáveis no seu dia a dia.</p>
+
+            <button onclick="alert('Obrigado por apoiar a sustentabilidade! 🌎')">
+                Participar
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <p>Sustentabilidade Ambiental © 2026</p>
+        <p>Desenvolvido por Rafael Baran</p>
+    </footer>
+
+</body>
+</html>
